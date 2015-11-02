@@ -1,4 +1,5 @@
 menu.clock=Clock
+menu.bodlevel=Brown-out detection
 
 atmega168.name=ATmega168
 atmega168.bootloader.tool=arduino:avrdude
@@ -63,35 +64,42 @@ atmega168.menu.clock.external20.build.f_cpu=20000000L
 atmega328p.menu.clock.internal1=1 MHz (internal)
 atmega328p.menu.clock.internal1.bootloader.low_fuses=0x62
 atmega328p.menu.clock.internal1.bootloader.high_fuses=0xda
-atmega328p.menu.clock.internal1.bootloader.extended_fuses=0x05
 atmega328p.menu.clock.internal1.build.f_cpu=1000000L
 
 atmega328p.menu.clock.internal8=8 MHz (internal)
 atmega328p.menu.clock.internal8.bootloader.low_fuses=0xe2
 atmega328p.menu.clock.internal8.bootloader.high_fuses=0xda
-atmega328p.menu.clock.internal8.bootloader.extended_fuses=0x05
 atmega328p.menu.clock.internal8.build.f_cpu=8000000L
 
 atmega328p.menu.clock.external8=8 MHz (external)
 atmega328p.menu.clock.external8.bootloader.low_fuses=0xff
 atmega328p.menu.clock.external8.bootloader.high_fuses=0xda
-atmega328p.menu.clock.external8.bootloader.extended_fuses=0x05
 atmega328p.menu.clock.external8.build.f_cpu=8000000L
 
 atmega328p.menu.clock.external12=12 MHz (external)
 atmega328p.menu.clock.external12.bootloader.low_fuses=0xff
 atmega328p.menu.clock.external12.bootloader.high_fuses=0xda
-atmega328p.menu.clock.external12.bootloader.extended_fuses=0x05
 atmega328p.menu.clock.external12.build.f_cpu=12000000L
 
 atmega328p.menu.clock.external16=16 MHz (external)
 atmega328p.menu.clock.external16.bootloader.low_fuses=0xff
 atmega328p.menu.clock.external16.bootloader.high_fuses=0xda
-atmega328p.menu.clock.external16.bootloader.extended_fuses=0x05
 atmega328p.menu.clock.external16.build.f_cpu=16000000L
 
 atmega328p.menu.clock.external20=20 MHz (external)
 atmega328p.menu.clock.external20.bootloader.low_fuses=0xff
 atmega328p.menu.clock.external20.bootloader.high_fuses=0xda
-atmega328p.menu.clock.external20.bootloader.extended_fuses=0x05
 atmega328p.menu.clock.external20.build.f_cpu=20000000L
+
+
+atmega328p.menu.bodlevel.vcc2v7=2.7V
+atmega328p.menu.bodlevel.vcc2v7.bootloader.extended_fuses=0x05
+
+atmega328p.menu.bodlevel.disabled=disabled
+atmega328p.menu.bodlevel.disabled.bootloader.extended_fuses=0x07
+
+atmega328p.menu.bodlevel.vcc1v8=1.8V
+atmega328p.menu.bodlevel.vcc1v8.bootloader.extended_fuses=0x06
+
+atmega328p.menu.bodlevel.vcc4v3=4.3V
+atmega328p.menu.bodlevel.vcc4v3.bootloader.extended_fuses=0x04
